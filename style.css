@@ -1,0 +1,616 @@
+                        * {
+                            margin: 0;
+                            padding: 0;
+                            box-sizing: border-box;
+                        }
+                        
+                        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+                        body {
+                            font-family: "Inter", serif;
+                        }
+                        
+                        .container {
+                            max-width: 1580px;
+                            margin: 0% auto;
+                        }
+                        
+                        header {
+                            background-color: #FFFFFF;
+                            padding: 10px;
+                            text-align: center;
+                            height: 70px;
+                            position: sticky;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            z-index: 1000;
+                            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+                        }
+                        
+                        header>div {
+                            display: flex;
+                            justify-content: space-between;
+                        }
+                        
+                        header>div>div {
+                            display: flex;
+                            align-items: center;
+                        }
+                        
+                        header>div>div>img {
+                            width: 200px;
+                            height: 38px;
+                        }
+                        
+                        header>div>div>ul {
+                            display: flex;
+                            justify-content: space-around;
+                            list-style: none;
+                            gap: 21px;
+                        }
+                        
+                        header>div>div>ul>li>a {
+                            color: #000;
+                            text-decoration: none;
+                            transition: color 0.3s ease;
+                            font-weight: 500;
+                            font-size: 22px;
+                            text-transform: capitalize;
+                        }
+                        
+                        header>div>div {
+                            display: flex;
+                            gap: 21px;
+                        }
+                        
+                        header>div>div>button {
+                            padding: 11px 28px;
+                            background-color: #F1F1F1;
+                            border-radius: 30px;
+                            border: none;
+                            text-align: center;
+                            font-size: 22px;
+                            font-weight: 500;
+                            color: #000000;
+                        }
+                        
+                        header>div>div>button:nth-child(2) {
+                            background-color: #000000;
+                            border-radius: 30px;
+                            border: none;
+                            text-align: center;
+                            font-size: 22px;
+                            font-weight: 500;
+                            color: #fff;
+                        }
+                        
+                        header>div>div>i {
+                            font-size: 22px;
+                            color: #000;
+                            line-height: 1;
+                            display: flex;
+                            align-items: center;
+                        }
+                        
+                        .hero-image {
+                            position: relative;
+                            height: 760px;
+                            background: url('images/Rectangle 1.png') no-repeat center center/cover;
+                        }
+                        
+                        .hero-content {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            background: #fff;
+                            padding: 30px;
+                            border-radius: 10px;
+                            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                            text-align: center;
+                            width: 80%;
+                            max-width: 1100px;
+                            max-height: 760px;
+                        }
+                        
+                        .hero-content>div {
+                            display: flex;
+                            justify-content: center;
+                            gap: 10px;
+                        }
+                        
+                        .hero-content h1 {
+                            font-size: 45px;
+                            font-weight: 500;
+                            line-height: 55px;
+                            margin-bottom: 30px;
+                            margin-top: 20px;
+                        }
+                        
+                        .hero-content select,
+                        .hero-content input,
+                        .hero-content button {
+                            margin: 10px 5px;
+                            width: 222px;
+                            height: 50px;
+                            padding: 10px;
+                            border: none;
+                            outline: none;
+                            font-size: 22px;
+                            background-color: #ECECEC;
+                            border-radius: 5px;
+                        }
+                        
+                        .hero-lastinput {
+                            display: flex;
+                            margin-bottom: 30px;
+                        }
+                        
+                        .hero-lastinput input {
+                            width: 702px;
+                            height: 50px;
+                            text-align: center;
+                        }
+                        
+                        .hero-content button {
+                            background: #00EBC7;
+                            color: #000;
+                            border: none;
+                            cursor: pointer;
+                            padding: 11px 28px;
+                            transition: all 0.3s ease;
+                            border-radius: 30px;
+                        }
+                        
+                        .why-zappr {
+                            position: absolute;
+                            bottom: 60px;
+                            left: 50%;
+                        }
+                        
+                        .why-zappr a {
+                            color: #fff;
+                            padding: 10px 20px;
+                            border: 1px solid #ddd;
+                            border-radius: 30px;
+                            transition: all 0.3s ease;
+                            font-size: 22px;
+                        }
+                        
+                        .coin {
+                            background-color: #FDE24F;
+                            height: 370px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            padding: 0;
+                        }
+                        
+                        .coin .coin2 {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 40px;
+                            align-items: center;
+                            text-align: center;
+                            /* Ensures text is centered within the column */
+                        }
+                        
+                        .coin h2 {
+                            font-size: 34px;
+                            font-weight: 500;
+                            text-align: center;
+                        }
+                        
+                        .coin .img {
+                            display: flex;
+                            width: 1220px;
+                            justify-content: space-between;
+                            margin: 0 auto;
+                        }
+                        
+                        .features {
+                            text-align: center;
+                            padding: 40px 20px;
+                            background-color: #ffffff;
+                        }
+                        
+                        .features h2 {
+                            font-size: 34px;
+                            margin-bottom: 50px;
+                            color: #000;
+                            text-align: left;
+                            font-weight: 500;
+                        }
+                        
+                        .features-container {
+                            width: 1180px;
+                            margin: auto;
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: flex-start;
+                            gap: 20px;
+                        }
+                        
+                        .feature-item {
+                            text-align: center;
+                            max-width: 300px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        
+                        .feature-item img {
+                            width: 80px;
+                            height: 80px;
+                            margin-bottom: 20px;
+                        }
+                        
+                        .feature-item h3 {
+                            font-size: 24px;
+                            font-weight: 500;
+                            margin-bottom: 10px;
+                            font-weight: bold;
+                            color: #000;
+                        }
+                        
+                        .feature-item p {
+                            font-size: 20px;
+                            color: #666;
+                            margin-bottom: 30px;
+                        }
+                        
+                        .feature-item a {
+                            color: #161616;
+                            text-decoration: none;
+                            font-weight: 600;
+                            font-size: 16px;
+                            transition: color 0.3s ease;
+                            border-bottom: 1px solid #161616;
+                        }
+                        
+                        .divider {
+                            display: flex;
+                            align-items: center;
+                            width: 100px;
+                            height: 2px;
+                            background-color: #535353;
+                            margin: 10% auto;
+                        }
+                        
+                        .cta-button {
+                            color: #000;
+                            border: 1px solid #000;
+                            padding: 10px 20px;
+                            font-size: 22px;
+                            font-weight: 500;
+                            border-radius: 30px;
+                            cursor: pointer;
+                            transition: background-color 0.3s ease;
+                            margin-top: 70px;
+                        }
+                        
+                        .buy-sell-section {
+                            background-color: #f9f9f9;
+                            border-top: 1px solid#000;
+                            border-bottom: 1px solid#000;
+                        }
+                        
+                        .buy-sell-container {
+                            display: flex;
+                            justify-content: space-around;
+                            gap: 60px;
+                            margin: 0 auto;
+                        }
+                        
+                        .buy-section,
+                        .sell-section {
+                            padding: 40px;
+                            flex: 1;
+                            text-align: center;
+                        }
+                        
+                        .divider2 {
+                            width: 2px;
+                            height: auto;
+                            background-color: #ddd;
+                            align-self: stretch;
+                            margin: 0;
+                        }
+                        
+                        .buy-section h2,
+                        .sell-section h2 {
+                            font-size: 34px;
+                            margin-bottom: 50px;
+                            font-weight: 500;
+                            text-align: left;
+                        }
+                        
+                        .offer-card {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            border: 1px solid #000;
+                            border-radius: 15px;
+                            padding: 15px;
+                            margin-bottom: 20px;
+                            background-color: #fff;
+                        }
+                        
+                        .offer-card img {
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50%;
+                        }
+                        
+                        .offer-details {
+                            display: flex;
+                            flex: 1;
+                            justify-content: space-around;
+                            text-align: left;
+                        }
+                        
+                        .offer-details p {
+                            margin: 5px 0;
+                            font-size: 16px;
+                            color: #333;
+                        }
+                        
+                        .offer-button {
+                            background-color: #000;
+                            color: #fff;
+                            border: none;
+                            border-radius: 20px;
+                            padding: 11px 28px;
+                            font-size: 22px;
+                            cursor: pointer;
+                        }
+                        
+                        .cta-section {
+                            background-color: #D6C3F9;
+                            padding: 60px 20px;
+                            text-align: center;
+                        }
+                        
+                        .cta-container {
+                            margin: 0 auto;
+                        }
+                        
+                        .cta-container h2 {
+                            font-size: 78px;
+                            font-weight: bold;
+                            color: #000;
+                            margin: 30px auto;
+                        }
+                        
+                        .cta-button {
+                            background-color: #000;
+                            color: #fff;
+                            padding: 15px 45px;
+                            font-size: 18px;
+                            font-weight: bold;
+                            border: none;
+                            border-radius: 30px;
+                            cursor: pointer;
+                        }
+                        /* Footer Base Styles */
+                        
+                        .footer {
+                            background-color: #000;
+                            color: #fff;
+                            padding: 40px 20px;
+                            line-height: 1.6;
+                        }
+                        
+                        .footer-container {
+                            display: flex;
+                            justify-content: space-between;
+                            flex-wrap: wrap;
+                            gap: 20px;
+                        }
+                        
+                        .footer-logo img {
+                            width: 137px;
+                            height: 36px;
+                        }
+                        
+                        .footer-column h3 {
+                            font-size: 28px;
+                            font-weight: 500;
+                            margin-bottom: 10px;
+                        }
+                        
+                        .footer-column ul {
+                            list-style: none;
+                            padding: 0;
+                        }
+                        
+                        .footer-column ul li {
+                            margin-bottom: 8px;
+                        }
+                        
+                        .footer-column ul li a {
+                            color: #ccc;
+                            text-decoration: none;
+                            font-size: 20px;
+                            font-weight: 600;
+                            transition: color 0.3s ease;
+                        }
+                        
+                        .footer-column ul li a:hover {
+                            color: #fff;
+                        }
+                        
+                        .footer-disclaimer {
+                            margin-top: 30px;
+                            text-align: center;
+                            font-size: 13px;
+                            font-weight: 500;
+                            border-top: 1px solid #444;
+                            padding-top: 20px;
+                        }
+                        
+                        .footer-disclaimer p {
+                            margin: 0;
+                            line-height: 15px;
+                        }
+                        /* General Styles */
+                        
+                        @media (max-width: 1024px) {
+                            .container {
+                                max-width: 1024px;
+                                margin: 0% auto;
+                            }
+                            header>div>div>img {
+                                width: 130px;
+                            }
+                            body {
+                                font-size: 90%;
+                            }
+                            header>div>div>ul {
+                                display: none;
+                            }
+                            .hero-content>div {
+                                flex-direction: column;
+                            }
+                            .hero-image {
+                                height: 840px;
+                            }
+                            .coin h2 {
+                                font-size: 20px;
+                            }
+                            .hero-content {
+                                width: 90%;
+                                padding: 20px;
+                            }
+                            .hero-content h1 {
+                                font-size: 32px;
+                                line-height: 42px;
+                            }
+                            .hero-content select,
+                            .hero-content input,
+                            .hero-content button {
+                                width: 200px;
+                                font-size: 18px;
+                            }
+                            .hero-lastinput input {
+                                width: 100%;
+                            }
+                            .coin .img {
+                                flex-wrap: wrap;
+                                gap: 10px;
+                                display: none;
+                            }
+                            .features-container {
+                                flex-wrap: wrap;
+                                gap: 30px;
+                            }
+                            .feature-item {
+                                width: 100%;
+                                max-width: 300px;
+                            }
+                            .cta-container h2 {
+                                font-size: 48px;
+                                line-height: 56px;
+                            }
+                            .cta-button {
+                                font-size: 16px;
+                                padding: 10px 30px;
+                            }
+                        }
+                        /* For Mobile Screens (768px and below) */
+                        
+                        @media (max-width: 768px) {
+                            .container {
+                                /* max-width: 768px; */
+                                margin: 0% auto;
+                            }
+                            header>div>div>button:nth-child(2) {
+                                display: none;
+                            }
+                            .why-zappr {
+                                position: absolute;
+                                bottom: 60px;
+                                left: 50%;
+                                /* display: flex
+                        ; */
+                                display: none;
+                            }
+                            /* header>div {
+                        flex-direction: column;
+                        gap: 20px;
+                    } */
+                            .hero-content {
+                                top: 45%;
+                                transform: translate(-50%, -45%);
+                            }
+                            .features-container {
+                                width: 100%;
+                                flex-direction: column;
+                                align-items: center;
+                            }
+                            .feature-item {
+                                max-width: none;
+                            }
+                            .buy-sell-container {
+                                flex-direction: column;
+                                align-items: center;
+                                gap: 40px;
+                            }
+                            .divider2 {
+                                height: 2px;
+                                width: 80%;
+                            }
+                            .offer-card {
+                                flex-direction: column;
+                                align-items: center;
+                                text-align: center;
+                                padding: 20px;
+                            }
+                            .footer-container {
+                                flex-direction: column;
+                                text-align: center;
+                                gap: 30px;
+                            }
+                            .footer-column ul li a {
+                                font-size: 18px;
+                            }
+                            .footer-disclaimer p {
+                                font-size: 12px;
+                            }
+                        }
+                        /* For Extra Small Screens (480px and below) */
+                        
+                        @media (max-width: 480px) {
+                            .container {
+                                /* max-width: 480px; */
+                                margin: 0% auto;
+                            }
+                            .hero-content h1 {
+                                font-size: 24px;
+                                line-height: 32px;
+                            }
+                            .hero-content select,
+                            .hero-content input,
+                            .hero-content button {
+                                width: 100%;
+                                font-size: 16px;
+                            }
+                            .cta-container h2 {
+                                font-size: 36px;
+                            }
+                            .cta-button {
+                                font-size: 14px;
+                                padding: 8px 20px;
+                            }
+                            .offer-card img {
+                                width: 40px;
+                                height: 40px;
+                            }
+                            .offer-details p {
+                                font-size: 14px;
+                            }
+                            .footer-column ul li a {
+                                font-size: 16px;
+                            }
+                        }
